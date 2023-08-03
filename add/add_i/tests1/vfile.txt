@@ -1,2 +1,0 @@
-./test_adder.v \
-./../hdl/MyTopLevel.v
