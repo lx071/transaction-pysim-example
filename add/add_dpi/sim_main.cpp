@@ -13,7 +13,7 @@ int main(int argc, char** argv)
     auto top {make_unique<VMyTopLevel>(contextp.get())};
     while(!contextp->gotFinish()){
         top->eval();
-        contextp->timeInc(1000);
+        contextp->timeInc(5000);
     }
     return 0;
 }

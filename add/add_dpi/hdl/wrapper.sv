@@ -22,7 +22,7 @@ end
 reg [7:0] A_s;
 reg [7:0] B_s;
 
-always #1 clk_i = ~clk_i;
+always #5 clk_i = ~clk_i;
 
 initial begin
     clk_i = 0;
@@ -53,7 +53,7 @@ end
 
 always @(posedge clk_i) begin
     if(pointer==LENGTH) begin
-        #2 $finish;
+        #5 $finish;
     end
 end
 

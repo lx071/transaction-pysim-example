@@ -71,7 +71,7 @@ always @(posedge clk_i) begin
 
     if(pointer >= LENGTH) begin
         pointer = 0;
-        #2 $finish;
+        #5 $finish;
     end 
 end
 
