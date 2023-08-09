@@ -6,7 +6,8 @@ v3：简单加法函数, sv, iverilog/galaxsim
 v4：简单加法函数, Python层, cocotb+verilator  
 v5：简单加法函数, clk下沉, cocotb+verilator  
 v6：简单加法函数, bfm下沉, cocotb+verilator  
-v7：简单加法函数, sv, verilator  
+v7：简单加法函数, C, verilator  
 
 dpi：简单加法函数, sv, pybind11+dpi+verilator/galaxsim  
-v8：简单加法函数, sv, pybind11+verilator  
+v8：简单加法函数, sv-bfm, pybind11+verilator  
+v9：简单加法函数, C-bfm, pybind11+verilator  
