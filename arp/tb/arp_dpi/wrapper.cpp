@@ -27,20 +27,17 @@ void recv_data(svBitVecVal* data, int n)
     path.attr("append")("../utils");    //for verilator
     // path.attr("append")("./utils");    //for galaxsim
     py::module_ utils = py::module_::import("harness_utils");
-   
     size_t size_data = sizeof(data);
     
     auto res = py::array(py::buffer_info(
-        data,                              // 数据指针
-        sizeof(char),                      // 元素大小
+        data,                               // 数据指针
+        sizeof(char),                       // 元素大小
         py::format_descriptor<char>::value, // 格式化描述符
         1,                                  // 维度
-        { n },                           // 形状
+        { n },                              // 形状
         { sizeof(char) }                    // 每个维度的字节数
     ));
-    
     utils.attr("recv_res")(res);
-
 }
 
 extern "C" __attribute__((visibility("default")))
